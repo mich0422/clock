@@ -1,24 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
 
-	<head>
+	<link rel="stylesheet" type="text/css" href="styleSheet.css">
 
-		<title>Clock</title>
+  <script language="javascript" type="text/javascript" src="../p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../addons/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="../addons/p5.sound.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
 
-		<!-- include scripts here -->
-		<script language="javascript" type="text/javascript" src="p5/p5.min.js"></script>
-		<script language="javascript" type="text/javascript" src="p5/addons/p5.dom.js"></script>
-		<script language="javascript" type="text/javascript" src="script.js" charset="utf-8"></script>
-		<!-- end scripts include -->
 
-		<!-- include styles here -->
-		<link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
-		<!-- end styles here -->
 
-	</head>
+  <style> body {padding: 0; margin: 0;} 
 
-	<body>
 
-	</body>
 
+  </style>
+
+
+	<script>
+function startTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+    var t = setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i) {
+    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+
+</body>
 </html>
