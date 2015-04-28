@@ -1,6 +1,15 @@
+#txt {
+	text-align: center;
+	font-size: 15pt;
+	font: helvetica;
+	color: #FFF;
+	opacity:0.8;
+	padding-top: 10px;
+	padding-left: 200px;
+}
+
 body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-	font-size: 200%;
+    max-width:1200px;
+    background-image: url(http://smartshule.com/addons/default/themes/shule/img/bg/1.jpg);
+
 }
