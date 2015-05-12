@@ -1,15 +1,20 @@
+
+
+
+
+
 #txt {
 	text-align: center;
-	font-size: 15pt;
+	font-size: 18pt;
 	font: helvetica;
-	color: #FFF;
+	color: #000000;
 	opacity:0.8;
-	padding-top: 10px;
 	padding-left: 200px;
 }
 
 body {
     max-width:1200px;
-    background-image: url(http://smartshule.com/addons/default/themes/shule/img/bg/1.jpg);
+    background-color: #993333;
+    /*background-image: url(http://www.isharearena.com/wp-content/uploads/2012/03/wallpaper-773014.png);*/
 
 }
